@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sorting Chart</title>
+  <link rel="stylesheet" type="text/css" href="sort.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+  <div class="value">5</div>
+  <input type="range" min="5" max="95" step="10" value="10" id="range-slider">
+
+  <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+  </div>
+
+  <div id="chart"></div>
+
+    <div id="left-buttons">
+    <a class="button" href="#" style="--color:#81ff47;" id="update">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+   GENERATE CHART
+    </a>
+    <a class="button" href="#" style="--color:#41ff71;" id="randomize">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      RANDOMIZE
+    </a>
+  </div>
+
+  <div id="button-navbar-container">
+
+  <div id="button-navbar"> 
+    <!-- <button id="bubblesort">BubbleSort</button> -->
+    <a class="button" href="#" style="--color:#74ffdc;" id="bubblesort2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      BubbleSortInterval
+    </a>
+    <a class="button" href="#" style="--color:#a13efd;" id="bubblesort3">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      BubbleSortAsync
+    </a>
+    <a class="button" href="#" style="--color:#482ce9;" id="selectionsort3">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      SelectionSortAsync
+    </a>
+    <a class="button" href="#" style="--color:rgb(255, 46, 74);" id="insertionsort3">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      InsertionSortAsync
+    </a>
+  </div>
+    </div>
+
+<div id="speed-menu-container"> 
+  <div class="select">
+    <select name="speed of visualization" id="menu" class="speed-menu">
+      <option value="0">Speed (ms): </option>
+      <option value="0.5">1000.0ms</option>
+      <option value="0.75">800.0ms</option>
+      <option value="1">600.0ms</option>
+      <option value="2">10.0ms</option>
+      <option value="4">1.0ms</option>
+    </select>
+  </div>  
+  </div>
+  <script src="app2.js"></script>
+</body>
+</html>
